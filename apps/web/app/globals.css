@@ -80,7 +80,7 @@
      next/font (`--font-hanken`) and OFL, which is what lets next/font bake the
      files into the build and into every clone of this repo. It falls back to a
      system stack if the variable is ever absent. */
-  --font-sans: var(--font-hanken), 'Hanken Grotesk', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: var(--font-alan-sans), 'Alan Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   /* The type scale, pinned end to end.
      It had drifted to ELEVEN sizes — 10 · 11 · 12 · 13 · 14 · 15 · 16 · 18 · 23 ·

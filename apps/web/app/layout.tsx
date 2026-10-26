@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import './globals.css';
 import './icons.css';
 import { fontVariables } from '@/lib/fonts';
+import { alanSans } from '@/lib/axon-font';
 import { getLocale } from '@/lib/locale';
 import { PRODUCT_NAME } from '@/lib/product-name';
 import { getThemePref } from '@/lib/theme.server';
@@ -55,7 +56,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
   return (
     // Every curated face is declared here so a public form can switch typeface
     // without a rebuild; only the brand face is preloaded (see lib/fonts.ts).
-    <html lang={locale} data-theme={theme} className={fontVariables} suppressHydrationWarning>
+    <html lang={locale} data-theme={theme} className={`${fontVariables} ${alanSans.variable}`} suppressHydrationWarning>
       <body className="min-h-dvh bg-background text-foreground">{children}</body>
     </html>
   );

@@ -66,11 +66,11 @@
 
   /* Signal Green: publish, switch on, progress. `--signal-edge` rims the fill and
      draws the focus ring, at a lightness that clears 3:1 on this theme's page. */
-  --signal: #3ddc84;
+  --signal: #F3DE2C;
   --signal-foreground: #1a1a1c;
-  --signal-edge: #3ddc84;
-  --signal-ink: #5fe39b;
-  --focus: #3ddc84;
+  --signal-edge: #F3DE2C;
+  --signal-ink: #F3DE2C;
+  --focus: #F3DE2C;
 
   /* The data channels. See the header. */
   --score: #a78bfa;
@@ -110,7 +110,7 @@
      slightly stronger edge. */
   --border: rgba(255, 255, 255, 0.1);
   --input: rgba(255, 255, 255, 0.2);
-  --ring: #3ddc84;
+  --ring: #F3DE2C;
 
   /* Corner rounding. Controls 8, cards 16; the full ladder is in globals.css. */
   --radius: 0.5rem; /* 8px: inputs, selects, menu rows */
@@ -140,11 +140,11 @@
   --primary-ink: #1a1a1c;
   /* The fill stays the brand green; the EDGE carries the 3:1 (3.3:1 on paper).
      Darkening the fill instead would lose the one saturated brand colour. */
-  --signal: #3ddc84;
+  --signal: #F3DE2C;
   --signal-foreground: #1a1a1c;
-  --signal-edge: #1fa35a;
-  --signal-ink: #0e7a3f; /* 5.4:1 on paper */
-  --focus: #1fa35a;
+  --signal-edge: #a39309;
+  --signal-ink: #7a6e07; /* 5.2:1 on paper */
+  --focus: #a39309;
   --score: #8b5cf6;
   --score-ink: #6d3fd9; /* 6.2:1 on paper */
   --warning: #f5a524;
@@ -162,7 +162,7 @@
   --destructive-foreground: #ffffff;
   --border: #e6e6e8;
   --input: #d2d2d6;
-  --ring: #1fa35a;
+  --ring: #a39309;
 }
 
 /* The no-attribute fallback: whoever renders this sheet stamped no `data-theme`,
@@ -186,11 +186,11 @@
     --primary-foreground: #ffffff;
     --primary-edge: #1a1a1c;
     --primary-ink: #1a1a1c;
-    --signal: #3ddc84;
+    --signal: #F3DE2C;
     --signal-foreground: #1a1a1c;
-    --signal-edge: #1fa35a;
-    --signal-ink: #0e7a3f;
-    --focus: #1fa35a;
+    --signal-edge: #a39309;
+    --signal-ink: #7a6e07;
+    --focus: #a39309;
     --score: #8b5cf6;
     --score-ink: #6d3fd9;
     --warning: #f5a524;
@@ -206,6 +206,6 @@
     --destructive-foreground: #ffffff;
     --border: #e6e6e8;
     --input: #d2d2d6;
-    --ring: #1fa35a;
+    --ring: #a39309;
   }
 }

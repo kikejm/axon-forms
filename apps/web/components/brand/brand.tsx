@@ -1,6 +1,7 @@
 import { IS_DAPTA_BRAND, PRODUCT_NAME } from '@/lib/product-name';
 import { DaptaMark } from './dapta-logo';
 import { FormsLockup, FormsMark, FormsWordmark } from './forms-logo';
+import { AxonIcon, AxonWordmark } from './axon-logo';
 
 export { IS_DAPTA_BRAND, PRODUCT_NAME };
 
@@ -32,12 +33,7 @@ export function BrandLockup({ className, labelled }: { className?: string; label
   if (IS_DAPTA_BRAND) {
     return <FormsLockup className={className} title={labelled ? PRODUCT_NAME : undefined} />;
   }
-  return (
-    <span className="flex items-center gap-2">
-      <FallbackChip />
-      <span className="text-sm font-semibold text-foreground">{PRODUCT_NAME}</span>
-    </span>
-  );
+  return <AxonWordmark />;
 }
 
 /**
@@ -53,12 +49,7 @@ export function BrandWordmark({ className, labelled }: { className?: string; lab
   if (IS_DAPTA_BRAND) {
     return <FormsWordmark className={className} title={labelled ? PRODUCT_NAME : undefined} />;
   }
-  return (
-    <span className="flex items-center gap-2">
-      <FallbackChip />
-      <span className="text-sm font-semibold text-foreground">{PRODUCT_NAME}</span>
-    </span>
-  );
+  return <AxonWordmark />;
 }
 
 /**
@@ -96,9 +87,5 @@ export function PlatformMark({ className, labelled }: { className?: string; labe
 
 /** The pre-logo placeholder, kept as the fork fallback rather than deleted. */
 function FallbackChip() {
-  return (
-    <span className="rounded-md bg-primary px-2 py-0.5 text-sm font-semibold text-primary-foreground">
-      {PRODUCT_NAME.charAt(0)}
-    </span>
-  );
+  return <AxonIcon />;
 }
